@@ -13,7 +13,6 @@ import { useStateContext } from "../../context/StateContext";
 import  Product  from '../../Components/Product'
 
 const ProductDetail = ({ product, products }) => {
-  console.log(product)
   const { image, name, details, price } = product;
 
   const { incQty, decQty, qty, onAdd, setShowCart } = useStateContext()

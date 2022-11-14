@@ -15,9 +15,7 @@ const Cart = () => {
   const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity, onRemove } = useStateContext();
 
   const handleCheckout = async () => {
-    console.log(cartItems);
     console.log(JSON.stringify(cartItems));
-    console.log(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY)
     const stripe = await getStripe();
 
     const response = await fetch('/api/stripe', {
