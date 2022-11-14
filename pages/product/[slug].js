@@ -10,7 +10,7 @@ import { client, urlFor } from "../../lib/client";
 
 import { useStateContext } from "../../context/StateContext";
 
-import  Product  from '../../Components/Product'
+import  Product  from '../../ComponentsFolder/Product'
 
 const ProductDetail = ({ product, products }) => {
   const { image, name, details, price } = product;
